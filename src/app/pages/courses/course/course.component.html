@@ -1,0 +1,14 @@
+<div class="course-container">
+    <div class="course-info">
+        <div class="course-info-header">
+            <h3>{{course.title}}</h3>
+            <p>duration: {{minutesToStr(course.duration)}}</p>
+            <p>date: {{course.creatingDate | date}}</p>
+        </div>
+        <p class="course-description">{{course.description}}</p>
+    </div>
+    <div class="course-control">
+        <button class="btn btn-success"><i class="glyphicon glyphicon-pencil icon"></i> Edit</button>
+        <button class="btn btn-danger" (click)='delete()'><i class="glyphicon glyphicon-trash icon"></i> Delete</button>
+    </div>
+</div>

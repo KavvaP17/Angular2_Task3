@@ -1,0 +1,6 @@
+<div class="login-container">
+    <div *ngIf="userInfo.isAuthorizated">
+        <p class="user-login">{{userInfo.user}}</p>
+        <button class="btn btn-default" (click)="logOff()">Logoff</button>
+    </div>
+</div>

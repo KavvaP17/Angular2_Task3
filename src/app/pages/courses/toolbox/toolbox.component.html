@@ -1,0 +1,14 @@
+<form class="navbar-form navbar-left search-form">
+    <div class="form-group">
+        <input type="text"
+            placeholder="Search"
+            [(ngModel)]="searchValue"
+            [ngModelOptions]="{standalone: true}"
+            class="form-control">
+    </div>
+    <button class="btn btn-default" (click)="find()">
+    <i class="glyphicon glyphicon-search icon"></i>
+  </button>
+</form>
+
+<button class="btn btn-success btn-add-course"><i class="glyphicon glyphicon-plus icon"></i> Add course</button>

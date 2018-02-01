@@ -1,0 +1,13 @@
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.title {
+    margin-left: 50px;
+}

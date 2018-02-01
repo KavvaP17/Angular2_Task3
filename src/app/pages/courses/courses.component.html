@@ -1,0 +1,7 @@
+<app-toolbox></app-toolbox>
+<ul>
+    <li *ngFor="let course of coursesList">
+        <app-course [course]='course'
+        (deleteCourse)='deleteCourse($event)'></app-course>
+    </li>
+</ul>
