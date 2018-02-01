@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ModalService {
 
-    private deleteModal = {
+    private modalInfo = {
         isShow: false,
         deletedItemId: -1
     };
@@ -11,21 +11,21 @@ export class ModalService {
     constructor() { }
 
     modalShow(id: number): void {
-        this.deleteModal.isShow = true;
-        this.deleteModal.deletedItemId = id;
+        this.modalInfo.isShow = true;
+        this.modalInfo.deletedItemId = id;
     }
 
     modalHide(): void {
-        this.deleteModal.isShow = false;
-        this.deleteModal.deletedItemId = -1;
+        this.modalInfo.isShow = false;
+        this.modalInfo.deletedItemId = -1;
     }
 
-    modalIsShow() {
-        return this.deleteModal;
+    getModalInfo() {
+        return this.modalInfo;
     }
 
     getDeletedItemId(): number {
-        return this.deleteModal.deletedItemId;
+        return this.modalInfo.deletedItemId;
     }
 
 }

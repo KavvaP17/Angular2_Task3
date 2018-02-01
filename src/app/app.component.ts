@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
                 private authorizationService: AuthorizationService) { }
 
     ngOnInit() {
-        this.modalInfo = this.modalService.modalIsShow();
+        this.modalInfo = this.modalService.getModalInfo();
         this.authorizatedInfo.isAuthorizated = this.authorizationService.isAuthenticated();
         if (this.authorizatedInfo.isAuthorizated) {
             this.authorizatedInfo.user = this.authorizationService.GetUserInfo();
